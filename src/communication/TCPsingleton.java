@@ -10,7 +10,6 @@ import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.google.gson.Gson;
 
 
 public class TCPsingleton {
@@ -55,7 +54,6 @@ public void setObserver(Class observer) {
 			OutputStreamWriter osw = new OutputStreamWriter(os);
 			writer = new BufferedWriter(osw);
 			
-			Gson gson = new Gson();
 			
 			while(true) {
 				String line = reader.readLine();
