@@ -13,10 +13,11 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 
+import communication.TCPsingleton;
 import processing.core.PApplet;
 
 public class Servidor extends PApplet{
-	
+	private TCPsingleton tcp;
 	
 	public static void main(String[] args) {
 		
@@ -28,8 +29,8 @@ public class Servidor extends PApplet{
 	}
 	
 	public void setup() {
-		
-		
+		tcp = TCPsingleton.getInstance();
+
 	}
 	
 	
